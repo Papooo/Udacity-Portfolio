@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <div class="row">
+          <div class="col-md-6">
+              <picture>
+                <source media="(max-width: 990px)" srcset="images/logo-200.png 1x, images/logo-400.png 2x">
+                <img class="title-logo img-responsive" src="images/logo-400.png" srcset="images/logo-400.png 1x, images/logo-800.png 2x" alt="Mon Osm Logo">
+              </picture>
+          </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Mon Osm</h1>
+            <h4>Front-end Ninja</h4>
+          </div>
+        </div>
+      </header>
+
+      <section  class="main-banner">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-muted">Best work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <figure>
+              <picture>
+                <source media="(min-width: 700px)" srcset="images/main-1200.jpg 1x, images/main-2400.jpg 2x">
+                <source media="(min-width: 500px)" srcset="images/main-700.jpg 1x, images/main-1400.jpg 2x">
+                <img class="img-responsive button" src="images/main-500.jpg" srcset="images/main-500.jpg 1x, images/main-1000.jpg 2x" alt="Under world 2017" data-toggle="modal" data-target="#project1">
+              </picture>
+              <figcaption>Under world 2017</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-projects">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-muted">Featured work</h2>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <figure>
+              <picture>
+                <source media="(min-width: 1201px)" srcset="images/main1-400.jpg 1x, images/main1-800.jpg 2x">
+                <source media="(min-width: 991px)" srcset="images/main1-300.jpg 1x, images/main1-600.jpg 2x">
+                <source media="(max-width: 500px)" srcset="images/main1-500.jpg 1x, images/main1-1000.jpg 2x">
+                <img class="img-responsive button" src="images/main1-800.jpg" srcset="images/main1-800.jpg 1x, images/main1-1600.jpg 2x" alt="Mushrooms" data-toggle="modal" data-target="#myModal1">
+              </picture>
+              <figcaption>Mushrooms</figcaption>
+            </figure>
+            <h3>Mushrooms Project</h3>
+            <p><a href="#" data-toggle="modal" data-target="#myModal1">Link to Mushrooms Project</a></p>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <picture>
+                <source media="(min-width: 1201px)" srcset="images/main2-400.jpg 1x, images/main2-800.jpg 2x">
+                <source media="(min-width: 991px)" srcset="images/main2-300.jpg 1x, images/main2-600.jpg 2x">
+                <source media="(max-width: 500px)" srcset="images/main2-500.jpg 1x, images/main2-1000.jpg 2x">
+                <img class="img-responsive button" src="images/main2-800.jpg" srcset="images/main2-800.jpg 1x, images/main2-1600.jpg 2x" alt="Birds" data-toggle="modal" data-target="#myModal2">
+              </picture>
+              <figcaption>Birds</figcaption>
+            </figure>
+            <h3>Birds Project</h3>
+            <p><a href="#" data-toggle="modal" data-target="#myModal2">Link to Mushrooms Project</a></p>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <picture>
+                <source media="(min-width: 1201px)" srcset="images/main3-400.jpg 1x, images/main3-800.jpg 2x">
+                <source media="(min-width: 991px)" srcset="images/main3-300.jpg 1x, images/main3-600.jpg 2x">
+                <source media="(max-width: 500px)" srcset="images/main3-500.jpg 1x, images/main3-1000.jpg 2x">
+                <img class="img-responsive button" src="images/main3-800.jpg" srcset="images/main3-800.jpg 1x, images/main3-1600.jpg 2x" alt="Fishes" data-toggle="modal" data-target="#myModal3">
+              </picture>
+              <figcaption>Fishes</figcaption>
+            </figure>
+            <h3>Fishes Project</h3>
+            <p><a href="#" data-toggle="modal" data-target="#myModal3">Link to Mushrooms Project</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Made by Mon Osm - Front-end Ninja © 2017</p>
+      </footer>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel1">Best Work by Mon Osm</h4>
+                  </div>
+                  <div class="modal-body">
+                      <img class="img-responsive" src="images/main-600.jpg" alt="Main banner">
+                      Mon Osm best work details.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel2">Mushrooms Project</h4>
+            </div>
+            <div class="modal-body">
+              Mushrooms Project details.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel3">Birds Project</h4>
+            </div>
+            <div class="modal-body">
+              Birds Project details.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel4">Fishes Project</h4>
+            </div>
+            <div class="modal-body">
+              Fishes Project details.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>
